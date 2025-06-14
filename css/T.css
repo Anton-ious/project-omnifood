@@ -1,0 +1,50 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#header{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.666),rgba(0, 0, 0, 0.666)),url(../images/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+/*hero*/
+#customers{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.666), rgba(0, 0, 0, 0.666)), url(../images/back-customers.jpg);
+        background-size: cover;
+        background-position: center;
+        height: fit-content;
+        animation: customers linear forwards;
+        animation-timeline: view();
+        animation-range-start: cover;
+        animation-range-end: 50%;
+}
+@keyframes customers {
+    0% {
+        opacity: 0;
+        scale: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+        scale: 1;
+    }
+}
+/*shape*/
+i{
+    color: orange;
+}
+/*hr*/
+.hr1 {
+    border: 2px solid rgb(255, 213, 0);
+    width: 20%;
+}
+
+/*top of the page*/
+#btn{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 1000;
+}

@@ -1,0 +1,112 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#header{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.745),rgba(0, 0, 0, 0.725)),url('../images/hero.jpg');
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: fit-content;
+}
+/*animationimg1*/
+/* #animationimg1{
+    animation: animationimg1 20s linear infinite;
+    transition: 20s all;
+}
+@keyframes animationimg1{
+    0%{
+        transform: rotateY(0deg);
+    }
+    100%{
+        transform: rotateY(360deg);
+    }
+} */
+/*section1*/
+/*hr1*/
+.hr1{
+    border: 2px solid rgb(255, 213, 0);
+}
+
+/*section3*/
+.number{
+    color:rgb(210, 141, 11);
+    border: 2px solid rgb(210, 141, 11);
+    padding: 3%;
+}
+/*section5*/
+i{
+    color:orange;
+    display: flex;
+    align-content: center;
+    padding: 10px;
+}
+
+/*button to top of the page*/
+#top{
+    position: fixed;
+    opacity: 0;
+    bottom: 10px;
+    right: 10px;
+    z-index:1000;
+    animation: btn linear forwards;
+    animation-timeline: view();
+    animation-range-start: cover;
+    animation-range-end: cover;
+}
+@keyframes btn{
+    0%{
+        opacity: 0.4;
+        scale: 0;
+    }
+    100%{
+        opacity: 1;
+        scale: 0.8;
+    }
+}
+/*section6*/
+#customers {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.666), rgba(0, 0, 0, 0.666)), url(../images/back-customers.jpg);
+    background-size: cover;
+    background-position: center;
+    height: fit-content;
+    animation: customers linear forwards;
+    animation-timeline: view();
+    animation-range-start: cover;
+    animation-range-end: 50%;
+}
+
+@keyframes customers {
+    0% {
+        opacity: 0;
+        scale: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+        scale: 1;
+    }
+}
+/*btn*/
+#btn2 {
+    position: fixed;
+    bottom: 10px;
+    right: 70px;
+    z-index: 1000;
+    animation: btn2 linear forwards;
+    animation-timeline: view();
+    animation-range-start: cover;
+    animation-range-end: cover;
+}
+@keyframes btn2 {
+    0% {
+        opacity: 0.4;
+        scale: 0;
+    }
+
+    100% {
+        opacity: 1;
+        scale: 0.8;
+    }
+}
